@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Daily Deal Darling</title>
+    <meta name="description" content="Browse all 35 articles on self-care, beauty, home organization, and lifestyle tips for busy women.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Nunito+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💕</text></svg>">
+    <style>
+        :root {--primary: #E8A0BF;--primary-dark: #D4789C;--primary-light: #FDF2F8;--secondary: #BA90C6;--accent: #C0DBEA;--cream: #FFF9F5;--text-dark: #2D2A32;--text-medium: #5C5470;--text-light: #8E8A9D;--white: #FFFFFF;--shadow-soft: 0 4px 20px rgba(232, 160, 191, 0.15);--shadow-medium: 0 8px 30px rgba(232, 160, 191, 0.2);--radius-sm: 8px;--radius-md: 16px;--radius-lg: 24px;}
+        * {margin: 0;padding: 0;box-sizing: border-box;}
+        body {font-family: 'Nunito Sans', sans-serif;background: var(--cream);color: var(--text-dark);line-height: 1.7;}
+        h1, h2, h3, h4 {font-family: 'Playfair Display', serif;font-weight: 600;line-height: 1.3;}
+        nav {background: rgba(255, 255, 255, 0.95);backdrop-filter: blur(10px);box-shadow: var(--shadow-soft);padding: 1rem 2rem;position: sticky;top: 0;z-index: 1000;}
+        .nav-container {max-width: 1200px;margin: 0 auto;display: flex;justify-content: space-between;align-items: center;}
+        .logo {font-family: 'Playfair Display', serif;font-size: 1.5rem;font-weight: 700;color: var(--primary-dark);text-decoration: none;display: flex;align-items: center;gap: 0.5rem;}
+        .nav-links {display: flex;gap: 2rem;list-style: none;}
+        .nav-links a {text-decoration: none;color: var(--text-medium);font-weight: 500;font-size: 0.95rem;transition: color 0.3s ease;}
+        .nav-links a:hover {color: var(--primary-dark);}
+        .page-header {background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);padding: 4rem 2rem;text-align: center;color: white;}
+        .page-header h1 {font-size: 3rem;margin-bottom: 1rem;}
+        .page-header p {font-size: 1.2rem;opacity: 0.9;max-width: 600px;margin: 0 auto;}
+        .filter-bar {background: white;padding: 1.5rem 2rem;border-bottom: 1px solid var(--primary-light);}
+        .filter-container {max-width: 1200px;margin: 0 auto;display: flex;gap: 1rem;flex-wrap: wrap;justify-content: center;}
+        .filter-btn {background: var(--cream);border: 2px solid var(--primary-light);padding: 0.5rem 1.5rem;border-radius: 50px;font-size: 0.9rem;font-weight: 600;color: var(--text-medium);cursor: pointer;transition: all 0.3s ease;text-decoration: none;}
+        .filter-btn:hover, .filter-btn.active {background: var(--primary);border-color: var(--primary);color: white;}
+        .blog-content {max-width: 1200px;margin: 0 auto;padding: 3rem 2rem;}
+        .category-section {margin-bottom: 4rem;}
+        .category-title {font-size: 1.8rem;color: var(--text-dark);margin-bottom: 1.5rem;padding-bottom: 0.5rem;border-bottom: 3px solid var(--primary);}
+        .articles-grid {display: grid;grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));gap: 1.5rem;}
+        .article-card {background: white;border-radius: var(--radius-lg);overflow: hidden;text-decoration: none;transition: all 0.3s ease;box-shadow: var(--shadow-soft);}
+        .article-card:hover {transform: translateY(-5px);box-shadow: var(--shadow-medium);}
+        .article-card h3 {font-size: 1.1rem;color: var(--text-dark);padding: 1.2rem;line-height: 1.4;}
+        .article-card .category-tag {display: inline-block;background: var(--primary-light);color: var(--primary-dark);padding: 0.2rem 0.8rem;border-radius: 50px;font-size: 0.7rem;font-weight: 600;margin: 0 1.2rem 1rem;text-transform: uppercase;}
+        footer {background: var(--text-dark);color: white;padding: 3rem 2rem;text-align: center;}
+        footer p {opacity: 0.7;font-size: 0.9rem;}
+        footer a {color: var(--primary);text-decoration: none;}
+        @media (max-width: 768px) {.nav-links {display: none;}.page-header h1 {font-size: 2rem;}.articles-grid {grid-template-columns: 1fr;}}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="/" class="logo"><span>💕</span> Daily Deal Darling</a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <h1>All Articles</h1>
+        <p>35 articles packed with tips, tricks, and inspiration for busy women like you.</p>
+    </header>
+
+    <div class="filter-bar">
+        <div class="filter-container">
+            <a href="/blog" class="filter-btn active">All (35)</a>
+            <a href="/category/self-care" class="filter-btn">🧘‍♀️ Self-Care (10)</a>
+            <a href="/category/beauty" class="filter-btn">💄 Beauty (5)</a>
+            <a href="/category/home" class="filter-btn">🏠 Home (5)</a>
+            <a href="/category/lifestyle" class="filter-btn">✨ Lifestyle (15)</a>
+        </div>
+    </div>
+
+    <main class="blog-content">
+        <section class="category-section">
+            <h2 class="category-title">🧘‍♀️ Self-Care & Morning Routines</h2>
+            <div class="articles-grid">
+                <a href="/blog/morning-routine-habits" class="article-card"><span class="category-tag">Morning</span><h3>How to Stop Hitting Snooze and Become a Morning Person</h3></a>
+                <a href="/blog/morning-skincare-routine" class="article-card"><span class="category-tag">Morning</span><h3>A 5-Minute Morning Skincare Routine for Busy Moms</h3></a>
+                <a href="/blog/productive-morning-start" class="article-card"><span class="category-tag">Morning</span><h3>How to Have a Productive Morning (Even When Exhausted)</h3></a>
+                <a href="/blog/morning-energy-boost" class="article-card"><span class="category-tag">Morning</span><h3>How to Have More Energy in the Morning</h3></a>
+                <a href="/blog/sunday-morning-reset" class="article-card"><span class="category-tag">Morning</span><h3>The Sunday Morning Reset Routine That Changed My Week</h3></a>
+                <a href="/blog/evening-wind-down" class="article-card"><span class="category-tag">Self-Care</span><h3>Evening Wind-Down Routine for Better Sleep</h3></a>
+                <a href="/blog/self-care-sunday" class="article-card"><span class="category-tag">Self-Care</span><h3>Self-Care Sunday Ideas That Don't Cost a Fortune</h3></a>
+                <a href="/blog/stress-relief-tips" class="article-card"><span class="category-tag">Self-Care</span><h3>Quick Stress Relief Tips for Busy Women</h3></a>
+                <a href="/blog/mental-health-habits" class="article-card"><span class="category-tag">Self-Care</span><h3>Daily Mental Health Habits That Actually Help</h3></a>
+                <a href="/blog/digital-detox" class="article-card"><span class="category-tag">Self-Care</span><h3>How to Do a Digital Detox Without Going Crazy</h3></a>
+            </div>
+        </section>
+
+        <section class="category-section">
+            <h2 class="category-title">🏠 Home Organization</h2>
+            <div class="articles-grid">
+                <a href="/blog/kitchen-organization" class="article-card"><span class="category-tag">Home</span><h3>Kitchen Organization Ideas That Actually Work</h3></a>
+                <a href="/blog/closet-declutter" class="article-card"><span class="category-tag">Home</span><h3>How to Finally Declutter Your Closet</h3></a>
+                <a href="/blog/bathroom-organization" class="article-card"><span class="category-tag">Home</span><h3>Bathroom Organization Ideas for Small Spaces</h3></a>
+                <a href="/blog/desk-setup" class="article-card"><span class="category-tag">Home</span><h3>Work From Home Desk Setup That Won't Break the Bank</h3></a>
+                <a href="/blog/entryway-organization" class="article-card"><span class="category-tag">Home</span><h3>Entryway Organization Ideas That Stop the Clutter</h3></a>
+            </div>
+        </section>
+
+        <section class="category-section">
+            <h2 class="category-title">💄 Beauty & Skincare</h2>
+            <div class="articles-grid">
+                <a href="/blog/natural-makeup-look" class="article-card"><span class="category-tag">Beauty</span><h3>Natural Makeup Look in Under 10 Minutes</h3></a>
+                <a href="/blog/hair-care-tips" class="article-card"><span class="category-tag">Beauty</span><h3>Hair Care Tips for Busy Women</h3></a>
+                <a href="/blog/skincare-mistakes" class="article-card"><span class="category-tag">Beauty</span><h3>Skincare Mistakes You're Probably Making</h3></a>
+                <a href="/blog/glowing-skin-tips" class="article-card"><span class="category-tag">Beauty</span><h3>How to Get Glowing Skin Without Expensive Treatments</h3></a>
+                <a href="/blog/safe-skincare-swaps" class="article-card"><span class="category-tag">Beauty</span><h3>Pregnancy-Safe Skincare Swaps That Actually Work</h3></a>
+            </div>
+        </section>
+
+        <section class="category-section">
+            <h2 class="category-title">💪 Health & Wellness</h2>
+            <div class="articles-grid">
+                <a href="/blog/water-intake" class="article-card"><span class="category-tag">Health</span><h3>How to Actually Drink Enough Water Every Day</h3></a>
+                <a href="/blog/healthy-snacking" class="article-card"><span class="category-tag">Health</span><h3>Healthy Snacking Ideas for Busy Women</h3></a>
+                <a href="/blog/walking-benefits" class="article-card"><span class="category-tag">Health</span><h3>Walking Benefits: The Exercise You're Underestimating</h3></a>
+                <a href="/blog/better-posture" class="article-card"><span class="category-tag">Health</span><h3>Better Posture Tips for Desk Workers</h3></a>
+                <a href="/blog/meal-prep-basics" class="article-card"><span class="category-tag">Health</span><h3>Meal Prep Basics for Beginners</h3></a>
+            </div>
+        </section>
+
+        <section class="category-section">
+            <h2 class="category-title">👶 Parenting & Baby</h2>
+            <div class="articles-grid">
+                <a href="/blog/baby-gear-hacks" class="article-card"><span class="category-tag">Parenting</span><h3>Baby Gear Hacks That Make Life Easier</h3></a>
+                <a href="/blog/postpartum-fitness" class="article-card"><span class="category-tag">Parenting</span><h3>Postpartum Fitness: Starting Slow and Safe</h3></a>
+                <a href="/blog/gentle-sleep-training" class="article-card"><span class="category-tag">Parenting</span><h3>Gentle Sleep Training Methods That Work</h3></a>
+                <a href="/blog/breastfeeding-hacks" class="article-card"><span class="category-tag">Parenting</span><h3>Breastfeeding Hacks Every New Mom Needs</h3></a>
+                <a href="/blog/toddler-meal-prep" class="article-card"><span class="category-tag">Parenting</span><h3>Toddler Meal Prep for Picky Eaters</h3></a>
+                <a href="/blog/budget-baby-essentials" class="article-card"><span class="category-tag">Parenting</span><h3>Budget Baby Essentials That Actually Work</h3></a>
+                <a href="/blog/newborn-photography-tips" class="article-card"><span class="category-tag">Parenting</span><h3>DIY Newborn Photos That Don't Look Amateur</h3></a>
+                <a href="/blog/mom-self-care-hacks" class="article-card"><span class="category-tag">Parenting</span><h3>5-Minute Self-Care for Moms Who Have No Time</h3></a>
+                <a href="/blog/hospital-bag-must-haves" class="article-card"><span class="category-tag">Parenting</span><h3>Hospital Bag Essentials You'll Actually Use</h3></a>
+                <a href="/blog/first-year-milestones" class="article-card"><span class="category-tag">Parenting</span><h3>How to Document Baby's First Year Without Losing Your Mind</h3></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Daily Deal Darling. Made with 💕 for women who deserve to feel amazing.</p>
+        <p><a href="/">Home</a> · <a href="/about">About</a> · <a href="/disclosure">Affiliate Disclosure</a></p>
+    </footer>
+</body>
+</html>

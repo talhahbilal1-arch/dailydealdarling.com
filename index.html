@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Deal Darling | Self-Care, Beauty & Lifestyle Tips</title>
+    <meta name="description" content="Discover the best self-care rituals, beauty tips, home organization hacks, and lifestyle inspiration for busy women. Your daily dose of feel-good content.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Nunito+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💕</text></svg>">
+    <style>
+        :root {--primary: #E8A0BF;--primary-dark: #D4789C;--primary-light: #FDF2F8;--secondary: #BA90C6;--accent: #C0DBEA;--cream: #FFF9F5;--text-dark: #2D2A32;--text-medium: #5C5470;--text-light: #8E8A9D;--white: #FFFFFF;--shadow-soft: 0 4px 20px rgba(232, 160, 191, 0.15);--shadow-medium: 0 8px 30px rgba(232, 160, 191, 0.2);--radius-sm: 8px;--radius-md: 16px;--radius-lg: 24px;--radius-xl: 32px;}
+        * {margin: 0;padding: 0;box-sizing: border-box;}
+        html {scroll-behavior: smooth;}
+        body {font-family: 'Nunito Sans', sans-serif;background: var(--cream);color: var(--text-dark);line-height: 1.7;overflow-x: hidden;}
+        h1, h2, h3, h4, h5 {font-family: 'Playfair Display', serif;font-weight: 600;line-height: 1.3;}
+        .bg-decoration {position: fixed;top: 0;left: 0;width: 100%;height: 100%;pointer-events: none;z-index: -1;overflow: hidden;}
+        .bg-circle {position: absolute;border-radius: 50%;opacity: 0.4;}
+        .bg-circle-1 {width: 600px;height: 600px;background: linear-gradient(135deg, var(--primary-light) 0%, var(--accent) 100%);top: -200px;right: -200px;}
+        .bg-circle-2 {width: 400px;height: 400px;background: linear-gradient(135deg, var(--secondary) 0%, var(--primary-light) 100%);bottom: 10%;left: -150px;opacity: 0.3;}
+        nav {position: fixed;top: 0;left: 0;right: 0;z-index: 1000;padding: 1rem 2rem;transition: all 0.3s ease;}
+        nav.scrolled {background: rgba(255, 255, 255, 0.95);backdrop-filter: blur(10px);box-shadow: var(--shadow-soft);}
+        .nav-container {max-width: 1200px;margin: 0 auto;display: flex;justify-content: space-between;align-items: center;}
+        .logo {font-family: 'Playfair Display', serif;font-size: 1.5rem;font-weight: 700;color: var(--primary-dark);text-decoration: none;display: flex;align-items: center;gap: 0.5rem;}
+        .logo-icon {font-size: 1.8rem;}
+        .nav-links {display: flex;gap: 2rem;list-style: none;}
+        .nav-links a {text-decoration: none;color: var(--text-medium);font-weight: 500;font-size: 0.95rem;transition: color 0.3s ease;position: relative;}
+        .nav-links a::after {content: '';position: absolute;bottom: -4px;left: 0;width: 0;height: 2px;background: var(--primary);transition: width 0.3s ease;}
+        .nav-links a:hover {color: var(--primary-dark);}
+        .nav-links a:hover::after {width: 100%;}
+        .nav-cta {background: var(--primary);color: var(--white);padding: 0.6rem 1.5rem;border-radius: 50px;text-decoration: none;font-weight: 600;font-size: 0.9rem;transition: all 0.3s ease;box-shadow: 0 4px 15px rgba(232, 160, 191, 0.4);}
+        .nav-cta:hover {background: var(--primary-dark);transform: translateY(-2px);box-shadow: 0 6px 20px rgba(232, 160, 191, 0.5);}
+        .hero {min-height: 100vh;display: flex;align-items: center;padding: 8rem 2rem 4rem;position: relative;}
+        .hero-container {max-width: 1200px;margin: 0 auto;display: grid;grid-template-columns: 1fr 1fr;gap: 4rem;align-items: center;}
+        .hero-content {animation: fadeInUp 1s ease;}
+        .hero-badge {display: inline-block;background: var(--primary-light);color: var(--primary-dark);padding: 0.5rem 1rem;border-radius: 50px;font-size: 0.85rem;font-weight: 600;margin-bottom: 1.5rem;}
+        .hero h1 {font-size: 3.5rem;color: var(--text-dark);margin-bottom: 1.5rem;line-height: 1.2;}
+        .hero h1 span {color: var(--primary-dark);font-style: italic;}
+        .hero p {font-size: 1.15rem;color: var(--text-medium);margin-bottom: 2rem;max-width: 500px;}
+        .hero-buttons {display: flex;gap: 1rem;flex-wrap: wrap;}
+        .btn-primary {background: var(--primary);color: var(--white);padding: 1rem 2rem;border-radius: 50px;text-decoration: none;font-weight: 600;transition: all 0.3s ease;box-shadow: var(--shadow-soft);display: inline-flex;align-items: center;gap: 0.5rem;}
+        .btn-primary:hover {background: var(--primary-dark);transform: translateY(-3px);box-shadow: var(--shadow-medium);}
+        .btn-secondary {background: var(--white);color: var(--text-dark);padding: 1rem 2rem;border-radius: 50px;text-decoration: none;font-weight: 600;transition: all 0.3s ease;border: 2px solid var(--primary-light);}
+        .btn-secondary:hover {border-color: var(--primary);color: var(--primary-dark);}
+        .hero-image {position: relative;animation: fadeInRight 1s ease 0.3s both;}
+        .hero-image-main {width: 100%;max-width: 500px;border-radius: var(--radius-xl);box-shadow: var(--shadow-medium);}
+        .hero-float-card {position: absolute;background: var(--white);padding: 1rem 1.5rem;border-radius: var(--radius-md);box-shadow: var(--shadow-soft);animation: float 3s ease-in-out infinite;}
+        .hero-float-card.card-1 {top: 10%;right: -20px;animation-delay: 0s;}
+        .hero-float-card.card-2 {bottom: 20%;left: -30px;animation-delay: 1.5s;}
+        .float-card-icon {font-size: 1.5rem;margin-bottom: 0.3rem;}
+        .float-card-text {font-size: 0.85rem;font-weight: 600;color: var(--text-dark);}
+        .float-card-sub {font-size: 0.75rem;color: var(--text-light);}
+        .newsletter {background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);padding: 5rem 2rem;text-align: center;position: relative;overflow: hidden;}
+        .newsletter::before {content: '';position: absolute;top: -50%;left: -50%;width: 200%;height: 200%;background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");opacity: 0.5;}
+        .newsletter-container {max-width: 600px;margin: 0 auto;position: relative;z-index: 1;}
+        .newsletter h2 {color: var(--white);font-size: 2.5rem;margin-bottom: 1rem;}
+        .newsletter p {color: rgba(255, 255, 255, 0.9);font-size: 1.1rem;margin-bottom: 2rem;}
+        .newsletter-form {display: flex;gap: 1rem;max-width: 500px;margin: 0 auto;}
+        .newsletter-form input {flex: 1;padding: 1rem 1.5rem;border: none;border-radius: 50px;font-size: 1rem;font-family: inherit;outline: none;}
+        .newsletter-form input::placeholder {color: var(--text-light);}
+        .newsletter-form button {background: var(--text-dark);color: var(--white);padding: 1rem 2rem;border: none;border-radius: 50px;font-size: 1rem;font-weight: 600;cursor: pointer;transition: all 0.3s ease;font-family: inherit;}
+        .newsletter-form button:hover {background: var(--white);color: var(--text-dark);transform: translateY(-2px);}
+        .categories {padding: 6rem 2rem;}
+        .section-header {text-align: center;margin-bottom: 3rem;}
+        .section-header h2 {font-size: 2.5rem;color: var(--text-dark);margin-bottom: 1rem;}
+        .section-header p {color: var(--text-medium);font-size: 1.1rem;max-width: 600px;margin: 0 auto;}
+        .categories-grid {display: grid;grid-template-columns: repeat(4, 1fr);gap: 1.5rem;max-width: 1200px;margin: 0 auto;}
+        .category-card {background: var(--white);padding: 2rem;border-radius: var(--radius-lg);text-align: center;text-decoration: none;transition: all 0.3s ease;box-shadow: var(--shadow-soft);}
+        .category-card:hover {transform: translateY(-8px);box-shadow: var(--shadow-medium);}
+        .category-icon {font-size: 3rem;margin-bottom: 1rem;display: block;}
+        .category-card h3 {font-size: 1.2rem;color: var(--text-dark);margin-bottom: 0.5rem;}
+        .category-card p {font-size: 0.9rem;color: var(--text-light);}
+        .latest-posts {padding: 6rem 2rem;background: var(--white);}
+        .posts-grid {display: grid;grid-template-columns: repeat(3, 1fr);gap: 2rem;max-width: 1200px;margin: 0 auto;}
+        .post-card {background: var(--cream);border-radius: var(--radius-lg);overflow: hidden;text-decoration: none;transition: all 0.3s ease;}
+        .post-card:hover {transform: translateY(-8px);box-shadow: var(--shadow-medium);}
+        .post-image {width: 100%;height: 220px;object-fit: cover;}
+        .post-content {padding: 1.5rem;}
+        .post-category {display: inline-block;background: var(--primary-light);color: var(--primary-dark);padding: 0.3rem 0.8rem;border-radius: 50px;font-size: 0.75rem;font-weight: 600;margin-bottom: 0.8rem;text-transform: uppercase;letter-spacing: 0.5px;}
+        .post-card h3 {font-size: 1.3rem;color: var(--text-dark);margin-bottom: 0.8rem;line-height: 1.4;}
+        .post-card p {font-size: 0.95rem;color: var(--text-medium);margin-bottom: 1rem;line-height: 1.6;}
+        .read-more {display: inline-flex;align-items: center;gap: 0.5rem;color: var(--primary-dark);font-weight: 600;font-size: 0.9rem;text-decoration: none;transition: gap 0.3s ease;}
+        .read-more:hover {gap: 0.8rem;}
+        .view-all-container {text-align: center;margin-top: 3rem;}
+        .featured-products {padding: 6rem 2rem;background: linear-gradient(180deg, var(--cream) 0%, var(--primary-light) 100%);}
+        .products-grid {display: grid;grid-template-columns: repeat(4, 1fr);gap: 1.5rem;max-width: 1200px;margin: 0 auto;}
+        .product-card {background: var(--white);border-radius: var(--radius-lg);overflow: hidden;text-decoration: none;transition: all 0.3s ease;box-shadow: var(--shadow-soft);}
+        .product-card:hover {transform: translateY(-5px);box-shadow: var(--shadow-medium);}
+        .product-image {width: 100%;height: 180px;object-fit: cover;background: var(--primary-light);}
+        .product-content {padding: 1.2rem;}
+        .product-card h4 {font-family: 'Nunito Sans', sans-serif;font-size: 1rem;font-weight: 600;color: var(--text-dark);margin-bottom: 0.5rem;line-height: 1.4;}
+        .product-card .price {color: var(--primary-dark);font-weight: 700;font-size: 1.1rem;}
+        .product-card .affiliate-note {font-size: 0.7rem;color: var(--text-light);margin-top: 0.5rem;}
+        .about {padding: 6rem 2rem;background: var(--white);}
+        .about-container {max-width: 1000px;margin: 0 auto;display: grid;grid-template-columns: 1fr 1.2fr;gap: 4rem;align-items: center;}
+        .about-image {position: relative;}
+        .about-image img {width: 100%;border-radius: var(--radius-xl);box-shadow: var(--shadow-medium);}
+        .about-content h2 {font-size: 2.5rem;margin-bottom: 1.5rem;}
+        .about-content p {color: var(--text-medium);margin-bottom: 1.5rem;font-size: 1.05rem;}
+        footer {background: var(--text-dark);color: var(--white);padding: 4rem 2rem 2rem;}
+        .footer-container {max-width: 1200px;margin: 0 auto;display: grid;grid-template-columns: 2fr 1fr 1fr 1fr;gap: 3rem;}
+        .footer-brand h3 {font-size: 1.5rem;margin-bottom: 1rem;color: var(--primary);}
+        .footer-brand p {color: rgba(255, 255, 255, 0.7);font-size: 0.95rem;line-height: 1.7;}
+        .footer-links h4 {font-family: 'Nunito Sans', sans-serif;font-size: 1rem;font-weight: 700;margin-bottom: 1.2rem;color: var(--white);}
+        .footer-links ul {list-style: none;}
+        .footer-links li {margin-bottom: 0.8rem;}
+        .footer-links a {color: rgba(255, 255, 255, 0.7);text-decoration: none;font-size: 0.9rem;transition: color 0.3s ease;}
+        .footer-links a:hover {color: var(--primary);}
+        .footer-social {display: flex;gap: 1rem;margin-top: 1.5rem;}
+        .footer-social a {width: 40px;height: 40px;background: rgba(255, 255, 255, 0.1);border-radius: 50%;display: flex;align-items: center;justify-content: center;text-decoration: none;font-size: 1.2rem;transition: all 0.3s ease;}
+        .footer-social a:hover {background: var(--primary);transform: translateY(-3px);}
+        .footer-bottom {max-width: 1200px;margin: 3rem auto 0;padding-top: 2rem;border-top: 1px solid rgba(255, 255, 255, 0.1);display: flex;justify-content: space-between;align-items: center;font-size: 0.85rem;color: rgba(255, 255, 255, 0.5);}
+        @keyframes fadeInUp {from {opacity: 0;transform: translateY(30px);}to {opacity: 1;transform: translateY(0);}}
+        @keyframes fadeInRight {from {opacity: 0;transform: translateX(30px);}to {opacity: 1;transform: translateX(0);}}
+        @keyframes float {0%, 100% {transform: translateY(0);}50% {transform: translateY(-10px);}}
+        .mobile-menu-btn {display: none;background: none;border: none;font-size: 1.5rem;cursor: pointer;color: var(--text-dark);}
+        @media (max-width: 1024px) {.hero-container {grid-template-columns: 1fr;text-align: center;}.hero h1 {font-size: 2.8rem;}.hero p {margin-left: auto;margin-right: auto;}.hero-buttons {justify-content: center;}.hero-image {order: -1;max-width: 400px;margin: 0 auto;}.categories-grid {grid-template-columns: repeat(2, 1fr);}.posts-grid {grid-template-columns: repeat(2, 1fr);}.products-grid {grid-template-columns: repeat(2, 1fr);}.about-container {grid-template-columns: 1fr;text-align: center;}.footer-container {grid-template-columns: repeat(2, 1fr);}}
+        @media (max-width: 768px) {.nav-links {display: none;}.nav-cta {display: none;}.mobile-menu-btn {display: block;}.hero {padding-top: 6rem;}.hero h1 {font-size: 2.2rem;}.newsletter-form {flex-direction: column;}.categories-grid {grid-template-columns: 1fr;}.posts-grid {grid-template-columns: 1fr;}.products-grid {grid-template-columns: 1fr;}.footer-container {grid-template-columns: 1fr;text-align: center;}.footer-social {justify-content: center;}.footer-bottom {flex-direction: column;gap: 1rem;text-align: center;}}
+    </style>
+</head>
+<body>
+    <div class="bg-decoration"><div class="bg-circle bg-circle-1"></div><div class="bg-circle bg-circle-2"></div></div>
+    
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="/" class="logo"><span class="logo-icon">💕</span>Daily Deal Darling</a>
+            <ul class="nav-links">
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="#products">Favorites</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+            <a href="#newsletter" class="nav-cta">Subscribe ✨</a>
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <span class="hero-badge">✨ Welcome to Your Happy Place</span>
+                <h1>Your Daily Dose of <span>Self-Care</span> & Inspiration</h1>
+                <p>Discover simple rituals, beauty secrets, and lifestyle tips designed for busy women who want to feel their best every single day.</p>
+                <div class="hero-buttons">
+                    <a href="/blog" class="btn-primary">Explore Articles<span>→</span></a>
+                    <a href="#newsletter" class="btn-secondary">Join the Newsletter</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=500&h=600&fit=crop" alt="Self-care lifestyle" class="hero-image-main">
+                <div class="hero-float-card card-1"><div class="float-card-icon">💆‍♀️</div><div class="float-card-text">Self-Care Tips</div><div class="float-card-sub">New posts weekly</div></div>
+                <div class="hero-float-card card-2"><div class="float-card-icon">🌸</div><div class="float-card-text">35 Articles</div><div class="float-card-sub">Ready to explore</div></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter" id="newsletter">
+        <div class="newsletter-container">
+            <h2>Join the Darling Community 💌</h2>
+            <p>Get weekly self-care tips, exclusive deals, and a dose of inspiration delivered straight to your inbox.</p>
+            <form class="newsletter-form" action="#" method="POST">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="categories" id="categories">
+        <div class="section-header">
+            <h2>Explore Topics You'll Love</h2>
+            <p>From morning routines to home organization, find the inspiration you need to create your best life.</p>
+        </div>
+        <div class="categories-grid">
+            <a href="/category/self-care" class="category-card"><span class="category-icon">🧘‍♀️</span><h3>Self-Care</h3><p>Rituals & routines for your soul</p></a>
+            <a href="/category/beauty" class="category-card"><span class="category-icon">💄</span><h3>Beauty</h3><p>Tips for glowing inside & out</p></a>
+            <a href="/category/home" class="category-card"><span class="category-icon">🏠</span><h3>Home</h3><p>Organization & cozy vibes</p></a>
+            <a href="/category/lifestyle" class="category-card"><span class="category-icon">✨</span><h3>Lifestyle</h3><p>Living your best life daily</p></a>
+        </div>
+    </section>
+
+    <section class="latest-posts" id="posts">
+        <div class="section-header">
+            <h2>Latest from the Blog</h2>
+            <p>Fresh inspiration to help you feel amazing every day.</p>
+        </div>
+        <div class="posts-grid">
+            <a href="/blog/morning-routine-habits" class="post-card">
+                <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=400&h=250&fit=crop" alt="Morning routine" class="post-image">
+                <div class="post-content"><span class="post-category">Self-Care</span><h3>How to Stop Hitting Snooze and Become a Morning Person</h3><p>Transform your mornings from chaotic to calm with these simple, actionable tips for busy women.</p><span class="read-more">Read More →</span></div>
+            </a>
+            <a href="/blog/skincare-mistakes" class="post-card">
+                <img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?w=400&h=250&fit=crop" alt="Skincare routine" class="post-image">
+                <div class="post-content"><span class="post-category">Beauty</span><h3>Skincare Mistakes You're Probably Making</h3><p>Avoid these common skincare pitfalls and finally achieve that glowing, healthy skin you deserve.</p><span class="read-more">Read More →</span></div>
+            </a>
+            <a href="/blog/kitchen-organization" class="post-card">
+                <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=250&fit=crop" alt="Organized kitchen" class="post-image">
+                <div class="post-content"><span class="post-category">Home</span><h3>Kitchen Organization Ideas That Actually Work</h3><p>Quick organization hacks that make a big difference without taking up your entire weekend.</p><span class="read-more">Read More →</span></div>
+            </a>
+        </div>
+        <div class="view-all-container">
+            <a href="/blog" class="btn-primary">View All 35 Articles →</a>
+        </div>
+    </section>
+
+    <section class="featured-products" id="products">
+        <div class="section-header">
+            <h2>Current Favorites 💕</h2>
+            <p>Products I'm loving right now (and you will too).</p>
+        </div>
+        <div class="products-grid">
+            <a href="https://amazon.com/dp/B00PBX3L7K?tag=dailydealdarling1-20" class="product-card" target="_blank" rel="noopener">
+                <img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=300&h=200&fit=crop" alt="Candle" class="product-image">
+                <div class="product-content"><h4>Chesapeake Bay Peace + Tranquility Candle</h4><span class="price">$12.99</span><p class="affiliate-note">#ad</p></div>
+            </a>
+            <a href="https://amazon.com/dp/B08BC88KG1?tag=dailydealdarling1-20" class="product-card" target="_blank" rel="noopener">
+                <img src="https://images.unsplash.com/photo-1570194065650-d99fb4b38b15?w=300&h=200&fit=crop" alt="Shower steamers" class="product-image">
+                <div class="product-content"><h4>BodyRestore Shower Steamers</h4><span class="price">$14.99</span><p class="affiliate-note">#ad</p></div>
+            </a>
+            <a href="https://amazon.com/dp/B08F7JM9VS?tag=dailydealdarling1-20" class="product-card" target="_blank" rel="noopener">
+                <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=300&h=200&fit=crop" alt="Journal" class="product-image">
+                <div class="product-content"><h4>Clever Fox Weekly Planner</h4><span class="price">$24.99</span><p class="affiliate-note">#ad</p></div>
+            </a>
+            <a href="https://amazon.com/dp/B085DTZQNZ?tag=dailydealdarling1-20" class="product-card" target="_blank" rel="noopener">
+                <img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=300&h=200&fit=crop" alt="Water bottle" class="product-image">
+                <div class="product-content"><h4>Owala FreeSip Water Bottle</h4><span class="price">$27.99</span><p class="affiliate-note">#ad</p></div>
+            </a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=500&fit=crop" alt="About Daily Deal Darling">
+            </div>
+            <div class="about-content">
+                <h2>Hey There, Darling! 👋</h2>
+                <p>I'm so glad you're here! Daily Deal Darling started as a personal journey to find balance in the chaos of everyday life. As a busy woman juggling work, family, and everything in between, I know how hard it can be to prioritize yourself.</p>
+                <p>This space is dedicated to sharing practical tips, honest product reviews, and little moments of joy that make life feel a bit more magical. Because you deserve to feel amazing every single day.</p>
+                <a href="/about" class="btn-primary">More About Me →</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>💕 Daily Deal Darling</h3>
+                <p>Your daily dose of self-care inspiration, beauty tips, and lifestyle hacks for busy women who want to feel their best.</p>
+                <div class="footer-social">
+                    <a href="https://pinterest.com/dailydealdarling" target="_blank">📌</a>
+                    <a href="https://instagram.com/dailydealdarling" target="_blank">📷</a>
+                    <a href="https://youtube.com/@dailydealdarling" target="_blank">▶️</a>
+                    <a href="https://tiktok.com/@dailydealdarling" target="_blank">🎵</a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="/category/self-care">Self-Care</a></li>
+                    <li><a href="/category/beauty">Beauty</a></li>
+                    <li><a href="/category/home">Home</a></li>
+                    <li><a href="/category/lifestyle">Lifestyle</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/blog">All Articles</a></li>
+                    <li><a href="#newsletter">Newsletter</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="/disclosure">Affiliate Disclosure</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Daily Deal Darling. All rights reserved.</p>
+            <p>Made with 💕 for women who deserve to feel amazing.</p>
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {navbar.classList.add('scrolled');} else {navbar.classList.remove('scrolled');}
+        });
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {target.scrollIntoView({behavior: 'smooth', block: 'start'});}
+            });
+        });
+        document.querySelector('.newsletter-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thanks for subscribing, darling! 💕 Check your inbox soon.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
