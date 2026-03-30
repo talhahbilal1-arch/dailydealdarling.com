@@ -9,7 +9,17 @@
   <meta property="og:description" content="Expert-curated product recommendations with honest reviews. Find the best deals on skincare, home, kitchen & more.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://dailydealdarling.com">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=1200&h=630&fit=crop&q=80">
+  <meta property="og:site_name" content="Daily Deal Darling">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Daily Deal Darling | Expert Product Recommendations & Best Deals 2026">
+  <meta name="twitter:description" content="Expert-curated product recommendations with honest reviews. Find the best deals on skincare, home, kitchen & more.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=1200&h=630&fit=crop&q=80">
+  <link rel="canonical" href="https://dailydealdarling.com/">
   <title>Daily Deal Darling | Expert Product Recommendations & Best Deals 2026</title>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebSite","name":"Daily Deal Darling","url":"https://dailydealdarling.com","description":"Expert-curated product recommendations with honest reviews and the best deals.","publisher":{"@type":"Organization","name":"Daily Deal Darling"}}
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -544,6 +554,8 @@
           <ul class="footer-links">
             <li><a href="about.html">About Us</a></li>
             <li><a href="contact.html">Contact</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="deals-guide.html">Free Deals Guide</a></li>
             <li><a href="privacy.html">Privacy Policy</a></li>
             <li><a href="disclosure.html">Affiliate Disclosure</a></li>
           </ul>
@@ -676,8 +688,12 @@
             '<button onclick="closePopup()" class="btn btn-primary">Start Shopping</button>';
         }, 1000);
       });
+      // Exit-intent trigger
+      document.addEventListener('mouseout', function(e) {
+        if (e.clientY < 10) showPopup();
+      });
     })();
   </script>
-<!-- Last deployed: 2026-03-11 -->
+<!-- Last deployed: 2026-03-29 -->
 </body>
 </html>
