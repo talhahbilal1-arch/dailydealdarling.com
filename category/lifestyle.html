@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifestyle Articles | Daily Deal Darling</title>
+    <meta name="description" content="Lifestyle tips including health, parenting, and daily hacks for busy women.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Nunito+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💕</text></svg>">
+    <style>
+        :root {--primary: #E8A0BF;--primary-dark: #D4789C;--primary-light: #FDF2F8;--secondary: #BA90C6;--cream: #FFF9F5;--text-dark: #2D2A32;--text-medium: #5C5470;--white: #FFFFFF;--shadow-soft: 0 4px 20px rgba(232, 160, 191, 0.15);--shadow-medium: 0 8px 30px rgba(232, 160, 191, 0.2);--radius-lg: 24px;}
+        * {margin: 0;padding: 0;box-sizing: border-box;}
+        body {font-family: 'Nunito Sans', sans-serif;background: var(--cream);color: var(--text-dark);line-height: 1.7;}
+        h1, h2, h3 {font-family: 'Playfair Display', serif;font-weight: 600;}
+        nav {background: rgba(255, 255, 255, 0.95);backdrop-filter: blur(10px);box-shadow: var(--shadow-soft);padding: 1rem 2rem;position: sticky;top: 0;z-index: 1000;}
+        .nav-container {max-width: 1200px;margin: 0 auto;display: flex;justify-content: space-between;align-items: center;}
+        .logo {font-family: 'Playfair Display', serif;font-size: 1.5rem;font-weight: 700;color: var(--primary-dark);text-decoration: none;display: flex;align-items: center;gap: 0.5rem;}
+        .nav-links {display: flex;gap: 2rem;list-style: none;}
+        .nav-links a {text-decoration: none;color: var(--text-medium);font-weight: 500;}
+        .nav-links a:hover {color: var(--primary-dark);}
+        .page-header {background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);padding: 4rem 2rem;text-align: center;color: white;}
+        .page-header h1 {font-size: 3rem;margin-bottom: 1rem;}
+        .page-header p {font-size: 1.2rem;opacity: 0.9;max-width: 600px;margin: 0 auto;}
+        .back-link {display: inline-block;margin: 2rem;color: var(--primary-dark);text-decoration: none;font-weight: 600;}
+        .back-link:hover {text-decoration: underline;}
+        .articles-container {max-width: 1200px;margin: 0 auto;padding: 2rem;}
+        .category-subtitle {font-size: 1.5rem;color: var(--primary-dark);margin: 2rem 0 1rem;padding-bottom: 0.5rem;border-bottom: 2px solid var(--primary-light);}
+        .articles-grid {display: grid;grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));gap: 2rem;margin-bottom: 3rem;}
+        .article-card {background: white;border-radius: var(--radius-lg);overflow: hidden;text-decoration: none;transition: all 0.3s ease;box-shadow: var(--shadow-soft);}
+        .article-card:hover {transform: translateY(-5px);box-shadow: var(--shadow-medium);}
+        .article-card h3 {font-size: 1.2rem;color: var(--text-dark);padding: 1.5rem;line-height: 1.4;}
+        .article-card p {padding: 0 1.5rem 1.5rem;color: var(--text-medium);font-size: 0.95rem;}
+        footer {background: var(--text-dark);color: white;padding: 3rem 2rem;text-align: center;margin-top: 3rem;}
+        footer p {opacity: 0.7;}
+        footer a {color: var(--primary);text-decoration: none;}
+        @media (max-width: 768px) {.nav-links {display: none;}.page-header h1 {font-size: 2rem;}}
+    </style>
+</head>
+<body>
+    <nav><div class="nav-container"><a href="/" class="logo"><span>💕</span> Daily Deal Darling</a><ul class="nav-links"><li><a href="/">Home</a></li><li><a href="/blog">Blog</a></li><li><a href="/about">About</a></li></ul></div></nav>
+    <header class="page-header"><h1>✨ Lifestyle</h1><p>Health tips, parenting hacks, and daily inspiration.</p></header>
+    <a href="/blog" class="back-link">← Back to All Articles</a>
+    <main class="articles-container">
+        <h2 class="category-subtitle">💪 Health & Wellness</h2>
+        <div class="articles-grid">
+            <a href="/blog/water-intake" class="article-card"><h3>How to Actually Drink Enough Water Every Day</h3><p>Stay hydrated without thinking about it.</p></a>
+            <a href="/blog/healthy-snacking" class="article-card"><h3>Healthy Snacking Ideas for Busy Women</h3><p>Snacks that fuel you, not drain you.</p></a>
+            <a href="/blog/walking-benefits" class="article-card"><h3>Walking Benefits: The Exercise You're Underestimating</h3><p>The simplest workout that works.</p></a>
+            <a href="/blog/better-posture" class="article-card"><h3>Better Posture Tips for Desk Workers</h3><p>Fix your posture, fix your back pain.</p></a>
+            <a href="/blog/meal-prep-basics" class="article-card"><h3>Meal Prep Basics for Beginners</h3><p>Eat healthy without the daily stress.</p></a>
+        </div>
+        
+        <h2 class="category-subtitle">👶 Parenting & Baby</h2>
+        <div class="articles-grid">
+            <a href="/blog/baby-gear-hacks" class="article-card"><h3>Baby Gear Hacks That Make Life Easier</h3><p>Genius tips for new parents.</p></a>
+            <a href="/blog/postpartum-fitness" class="article-card"><h3>Postpartum Fitness: Starting Slow and Safe</h3><p>Ease back into exercise safely.</p></a>
+            <a href="/blog/gentle-sleep-training" class="article-card"><h3>Gentle Sleep Training Methods That Work</h3><p>Help baby sleep without the tears.</p></a>
+            <a href="/blog/breastfeeding-hacks" class="article-card"><h3>Breastfeeding Hacks Every New Mom Needs</h3><p>Make nursing easier from day one.</p></a>
+            <a href="/blog/toddler-meal-prep" class="article-card"><h3>Toddler Meal Prep for Picky Eaters</h3><p>Win the mealtime battle.</p></a>
+            <a href="/blog/budget-baby-essentials" class="article-card"><h3>Budget Baby Essentials That Actually Work</h3><p>Skip the expensive stuff that doesn't matter.</p></a>
+            <a href="/blog/newborn-photography-tips" class="article-card"><h3>DIY Newborn Photos That Don't Look Amateur</h3><p>Capture memories beautifully at home.</p></a>
+            <a href="/blog/mom-self-care-hacks" class="article-card"><h3>5-Minute Self-Care for Moms Who Have No Time</h3><p>Quick resets for exhausted moms.</p></a>
+            <a href="/blog/hospital-bag-must-haves" class="article-card"><h3>Hospital Bag Essentials You'll Actually Use</h3><p>Pack only what matters.</p></a>
+            <a href="/blog/first-year-milestones" class="article-card"><h3>How to Document Baby's First Year</h3><p>Capture memories without the overwhelm.</p></a>
+        </div>
+    </main>
+    <footer><p>© 2025 Daily Deal Darling. Made with 💕</p><p><a href="/">Home</a> · <a href="/blog">All Articles</a> · <a href="/disclosure">Affiliate Disclosure</a></p></footer>
+</body>
+</html>
